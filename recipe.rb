@@ -5,14 +5,21 @@ def usage
 end
 
 data_file = ARGV[0]
+specified_id = ARGV[1].to_i
+
 unless data_file
   usage
   exit
 end
 
-File.open(ARGV[0]) do |file|
+def id_is_specified?
+  !!ARGV[1]
+end
+
 File.open(data_file) do |file|
   file.each_with_index do |line, i|
+    id = i + 1
+    next if id_is_specified? && id != specified_id
     puts "#{i + 1}: #{line}"
   end
 end
