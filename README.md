@@ -8,6 +8,6 @@ Ruby
 実行手順
 ----
 ```console
-$ ./recipe.rb
+$ ./recipe.rb recipe-data.txt
 オムライス
 ```
