@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def usage
-  puts "Usage: #{$PROGRAM_NAME} recipe-data.txt"
+  puts "Usage: #{$PROGRAM_NAME} recipe-data.txt [id]"
 end
 
 unless ARGV[0]
