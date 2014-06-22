@@ -10,7 +10,7 @@ unless ARGV[0]
 end
 
 File.open(ARGV[0]) do |file|
-  file.each do |line|
-    puts line
+  file.each_with_index do |line, i|
+    puts "#{i + 1}: #{line}"
   end
 end
