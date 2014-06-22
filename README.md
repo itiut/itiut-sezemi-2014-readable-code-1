@@ -8,7 +8,8 @@ Ruby
 実行手順
 ----
 ### データファイルの書式
-各行に1つのレシピ情報を書く
+各行に1つのレシピ情報を書く。
+各レシピのidは、そのレシピの書かれた行数に対応する。
 
 ```console
 $ cat recipe-data.txt
@@ -22,7 +23,7 @@ $ cat recipe-data.txt
 
 ```console
 $ ./recipe.rb recipe-data.txt
-オムライス
-親子丼
-杏仁豆腐
+1: オムライス
+2: 親子丼
+3: 杏仁豆腐
 ```
